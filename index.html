@@ -30,13 +30,17 @@
 
   	body {
   	  margin: 0;
-  	  display: flex;
-  	  justify-content: center;
-  	  align-items: center;
   	  text-align: center;
   	  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
-  	  background: #f0f0f0;
   	}
+    
+    header {
+      display: flex;
+  	  justify-content: center;
+  	  align-items: center;
+       background-color: #0087DC;
+      height: 50vh;
+    }
 
   	/**
   	 * Render the `main` element consistently in IE.
@@ -44,8 +48,6 @@
 
   	main {
   	  display: block;
-      height: 50vh;
-      background-color: #0087DC;
   	}
 
   	/**
@@ -116,11 +118,15 @@
   </style>
 </head>
 <body>
-  <main>
+  <header>
+    <div>
   	<h1>Yes</h1>
   	<small>But maybe <a href="https://www.independent.co.uk/news/uk/politics/liz-truss-pound-no-confidence-letters-b2175293.html">not for long</a></small>
-  </main>
+    </div>
+  </header>
+  <div class="tweets">
   <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/marcroberts/timelines/1574867208601214980?ref_src=twsrc%5Etfw">Is Liz Truss still PM - Curated tweets by marcroberts</a>
+  </div>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
